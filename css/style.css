@@ -753,8 +753,13 @@ main .sobre{
 
 @media(max-width: 992px){
 
+    .section-div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .section-div img {
-        display: none;
+        margin-top: 30px;
     }
 
     header .navegacao-primaria{
@@ -763,7 +768,7 @@ main .sobre{
 
     header {
         justify-content: space-between;
-        padding: 30px 70px;
+        padding: 30px 40px;
     }
 
     header i{
@@ -792,5 +797,16 @@ main .sobre{
     }
     .sobre_conteudo{
         grid-column: 1/-1;
+    }
+
+    .my_service{
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sobre_info{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
