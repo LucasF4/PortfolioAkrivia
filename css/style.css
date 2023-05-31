@@ -171,19 +171,18 @@ main .sobre{
     background-color: #dc3545;
 }
 
-.sobre img{
+.sobre video{
     animation: sideSection .5s ease-in-out forwards;
-    cursor: pointer;
+    /* cursor: pointer; */
     grid-row: 2;
     max-width: 100%;
-    border-radius: 4px;
     filter: blur(0);
 }
 
-.sobre img:hover{
+/* .sobre video:hover{
     transition: .5s ease-in;
     filter: blur(1px);
-}
+} */
 
 .sobre_conteudo{
     animation: upSection .6s ease-in-out forwards;
@@ -294,7 +293,7 @@ main .sobre{
     gap: 30px;
     text-align: center;
     max-width: 300px;
-    height: 300px;
+    height: 600px;
     background-color: #222;
 
 }
@@ -791,7 +790,7 @@ main .sobre{
         animation: upSection .8s ease-in-out forwards;
     }
 
-    .sobre img{
+    .sobre video{
         grid-column: 1/-1;
         justify-self: center;
     }
@@ -808,5 +807,11 @@ main .sobre{
     .sobre_info{
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .resume_generica .experience,
+    .resume_generica .education{
+        width: 100%;
+        text-align: center;
     }
 }
